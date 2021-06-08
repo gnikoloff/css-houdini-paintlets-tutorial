@@ -7,7 +7,7 @@
     "serve": "http-serve dist",
     "watch": "rollup -c -w",
     "build": "rollup -c",
-    "start:local": "run-p serve watch",
+    "dev": "run-p serve watch",
     "start": "run-p serve build"
   },
   "dependencies": {

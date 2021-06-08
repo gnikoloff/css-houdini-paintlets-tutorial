@@ -10,7 +10,7 @@ registerPaint(
     paint(ctx, paintSize, props) {
       ctx.beginPath()
       ctx.moveTo(0, 0)
-      ctx.lineTo(paintSize.width, paintSize.height / 2)
+      ctx.lineTo(paintSize.width, paintSize.height / 3)
       ctx.stroke()
     }
   }

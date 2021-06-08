@@ -10,10 +10,10 @@ export default [
     input: 'src/app.js',
     output: [{ file: 'dist/bundle.js', format: 'iife' }],
     plugins: [
-      ...sharedPlugins
-      // copy({
-      //   targets: [{ src: "index.html", dest: "dist" }]
-      // })
+      ...sharedPlugins,
+      copy({
+        targets: [{ src: 'index.html', dest: 'dist' }]
+      })
     ]
   },
   {
