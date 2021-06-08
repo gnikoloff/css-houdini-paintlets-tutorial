@@ -11,8 +11,10 @@
     "start": "run-p serve build"
   },
   "dependencies": {
+    "css-paint-polyfill": "^3.2.1",
+    "express": "4.17.1",
     "http-serve": "^1.0.1",
-    "express": "4.17.1"
+    "rollup-plugin-cleaner": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "1.18.4",

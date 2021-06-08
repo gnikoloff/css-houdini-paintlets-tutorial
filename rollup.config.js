@@ -17,8 +17,8 @@ export default [
     ]
   },
   {
-    input: 'src/paintlet-01/index.js',
-    output: [{ file: 'dist/paintlet-01.js', format: 'iife' }],
+    input: 'src/paintlets/connections.js',
+    output: [{ file: 'dist/paintlets/connections.js', format: 'iife' }],
     plugins: [...sharedPlugins]
   }
 ]
