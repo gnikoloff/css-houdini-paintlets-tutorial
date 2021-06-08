@@ -4,11 +4,24 @@
   "description": "Node.js example server starter project",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "serve": "http-serve dist",
+    "watch": "rollup -c -w",
+    "build": "rollup -c",
+    "start:local": "run-p serve watch",
+    "start": "run-p serve build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "http-serve": "^1.0.1",
+    "express": "4.17.1"
+  },
   "devDependencies": {
-    "nodemon": "1.18.4"
+    "nodemon": "1.18.4",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.51.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-import-css": "^2.0.1"
   },
   "keywords": []
 }
